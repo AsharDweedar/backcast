@@ -1,4 +1,5 @@
-var Video = Backbone.Model.extend({
+ 
+  var Video = Backbone.Model.extend({
 
   initialize: function(video) {
     // override youtube's complex id field
