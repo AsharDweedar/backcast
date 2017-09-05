@@ -2,11 +2,10 @@ var AppView = Backbone.View.extend({
 
   el: '#app',
 
-/*  initialize: function(datumArrOfObj) {
-    this.videos = new Videos(datumArrOfObj);
-    this.render();
+  initialize: function(datumArrOfObj) {
+    this.collection.on('change', this.render)
   },
-*/
+
 
   render: function() {
   	console.log('render of AppView');
